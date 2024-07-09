@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import './App.css'
 import { LoginForm } from './components/LoginForm'
+import { LogoCadAlunos } from './components/LogoCadAlunos'
 
 function App() {
 
@@ -9,9 +10,7 @@ function App() {
       <div className='container-login'>
       <div className='container-info'>
         <h2 className='h2-login'>Seja bem-vindo(a) ao</h2>
-          <div className='logo-name'>
-            <h1><span>Cad</span> Aluno</h1>
-          </div>
+        <LogoCadAlunos />
           <p>Faça seu login</p>
           <div className='info-login'>
             <LoginForm />

@@ -1,0 +1,15 @@
+.logo_name span {
+    color: var(--cor-azul);
+    border-bottom: 1px solid var(--cor-laranja);
+    padding-left: 70px;
+  }
+  
+  .logo_name h1 {
+    color: var(--cor-laranja);
+    border-top: 1px solid var(--cor-azul);
+    font-weight: 600;
+  }
+  
+  .logo_name {
+    font-size: 42px;
+  }
