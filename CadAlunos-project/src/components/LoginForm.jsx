@@ -1,12 +1,13 @@
 import {useForm} from 'react-hook-form'
 import { InputField } from './InputField'
 import { LoginButton } from './LoginButton'
+import styles from './LoginForm.module.css'
 
 export const LoginForm = () => {
     const {register, handleSubmit, formState: { errors }} = useForm()
 
   return (
-    <form onSubmit={handleSubmit(onsubmit)}>
+    <form className={styles.container_form} onSubmit={handleSubmit(onsubmit)}>
         <InputField 
             label="Email"
             name="email"

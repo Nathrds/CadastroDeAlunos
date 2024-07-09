@@ -29,6 +29,7 @@
   color: #000;
   font-weight: 400;
   padding-left: 70px;
+  margin-bottom: 15px;
 }
 
 .logo-name span {
@@ -52,16 +53,21 @@
   font-weight: bold;
   padding-left: 70px;
   margin-top: 74px;
+  margin-bottom: 15px;
 }
 
 .info-login {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 70px;
 }
 
 .info-login p {
   font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .info-login a {
