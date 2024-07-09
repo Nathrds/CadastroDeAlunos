@@ -1,42 +1,56 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --cor-azul: #004C99;
+  --cor-laranja: #F6931C;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h2-login {
+  color: #000;
+  font-weight: 400;
+  padding-left: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logo-name span {
+  color: var(--cor-azul);
+  border-bottom: 1px solid var(--cor-laranja);
+  padding-left: 70px;
 }
 
-.card {
-  padding: 2em;
+.logo-name h1 {
+  color: var(--cor-laranja);
+  border-top: 1px solid var(--cor-azul);
+  font-weight: 600;
 }
 
-.read-the-docs {
-  color: #888;
+.logo-name {
+  font-size: 42px;
+}
+
+
+.container-login p {
+  font-weight: bold;
+  padding-left: 70px;
+  margin-top: 74px;
+}
+
+.info-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-login p {
+  font-weight: 600;
+}
+
+.info-login a {
+  color: var(--cor-laranja);
 }
