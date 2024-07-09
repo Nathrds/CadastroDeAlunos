@@ -25,6 +25,8 @@ export const LoginForm = () => {
             error={errors.email?.message}
         />
 
+        <LoginForm type="submit">Entrar</LoginForm>
+
     </form>
   )
 }
