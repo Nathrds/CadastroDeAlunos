@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import './App.css'
-// import { LoginForm } from './components/LoginForm'
+import { LoginForm } from './components/LoginForm'
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
         </div>
         <p>Faça seu login</p>
         <div className='info-login'>
-          {/* <LoginForm /> */}
+          <LoginForm />
           <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
         </div>
       </div>

@@ -1,8 +1,12 @@
-// import React, { Children } from 'react'
-// import React from 'prop-types'
+import PropTypes from 'prop-types'
 
-export const LoginButton = (type, chieldren) => {
+export const LoginButton = ({type, children}) => {
   return (
-    <button type={type}>{chieldren}</button>
+    <button type={type}>{children}</button>
   )
+}
+
+LoginButton.propTypes = {
+  type: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
 }

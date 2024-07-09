@@ -1,8 +1,6 @@
-// import React from 'react'
 import {useForm} from 'react-hook-form'
 import { InputField } from './InputField'
-// import { StyledComponents } from './styled-components'
-
+import { LoginButton } from './LoginButton'
 
 export const LoginForm = () => {
     const {register, handleSubmit, formState: { errors }} = useForm()
@@ -13,7 +11,7 @@ export const LoginForm = () => {
             label="Email"
             name="email"
             type="email"
-            register={register({ required: 'E-mail é obrigatório!'})}
+            register={register}
             error={errors.email?.message}
         />
 
@@ -21,11 +19,11 @@ export const LoginForm = () => {
             label="Senha"
             name="password"
             type="password"
-            register={register({ required: 'Senha é obrigatória!'})}
+            register={register}
             error={errors.email?.message}
         />
 
-        <LoginForm type="submit">Entrar</LoginForm>
+        <LoginButton type="submit">Entrar</LoginButton>
 
     </form>
   )
