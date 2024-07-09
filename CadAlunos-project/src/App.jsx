@@ -7,14 +7,19 @@ function App() {
   return (
     <>
       <div className='container-login'>
-      <h2 className='h2-login'>Seja bem-vindo(a) ao</h2>
-        <div className='logo-name'>
-          <h1><span>Cad</span> Aluno</h1>
+      <div className='container-info'>
+        <h2 className='h2-login'>Seja bem-vindo(a) ao</h2>
+          <div className='logo-name'>
+            <h1><span>Cad</span> Aluno</h1>
+          </div>
+          <p>Faça seu login</p>
+          <div className='info-login'>
+            <LoginForm />
+            <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
+          </div>
         </div>
-        <p>Faça seu login</p>
-        <div className='info-login'>
-          <LoginForm />
-          <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
+        <div className='container-img'>
+          <img src="../src/assets/img-login.png" alt="imagem-login"/>
         </div>
       </div>
     </>
