@@ -2,15 +2,10 @@
 import { LoginForm } from '../LoginForm'
 import { LogoCadAlunos } from '../LogoCadAlunos'
 import styles from './LoginPage.module.css'
-
-// import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export const LoginPage = () => {
-    // const navigate = useNavigate()
-
-    // function goToRegistrationPage() {
-    //     navigate("../registration-page/RegistrationForm.jsx")
-    // }
+    const navigate = useNavigate();
 
   return (
     <>
@@ -21,7 +16,7 @@ export const LoginPage = () => {
                 <p>Faça seu login</p>
                 <div className={styles.info_login}>
                     <LoginForm />
-                    <p>Não tem uma conta? <a href=''>Cadastre-se</a>
+                    <p>Não tem uma conta? <a href='#' onClick={() => navigate('/registration-page')}>Cadastre-se</a>
                     </p>
                 </div>
             </div>
