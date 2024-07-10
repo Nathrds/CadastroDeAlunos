@@ -21,7 +21,7 @@ export const LoginForm = () => {
             name="password"
             type="password"
             register={register}
-            error={errors.email?.message}
+            error={errors.password?.message}
         />
 
         <LoginButton type="submit">Entrar</LoginButton>

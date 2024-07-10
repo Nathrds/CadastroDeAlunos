@@ -8,9 +8,15 @@
     font-weight: 700;
     font-size: 16px;
     height: 52px;
+    margin-top: 9px;
 }
 
 .loginButton_btn:hover {
     cursor: pointer;
     background-color: #f8a239;
+}
+
+.loginButton_btn a {
+    text-decoration: none;
+    background-color: transparent;
 }

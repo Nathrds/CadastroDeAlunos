@@ -1,25 +1,21 @@
 // import { useState } from 'react'
 import './App.css'
-import { LoginForm } from './components/LoginForm'
-import { LogoCadAlunos } from './components/LogoCadAlunos'
+import { LoginPage } from './components/login-page/LoginPage'
+import {Routes, Route, BrowserRouter} from 'react-router-dom'
+import { RegistrationForm } from './components/registration-page/RegistrationForm'
+import { RegistrationPage } from './components/registration-page/RegistrationPage'
 
 function App() {
-
   return (
     <>
-      <div className='container-login'>
-      <div className='container-info'>
-        <h2 className='h2-login'>Seja bem-vindo(a) ao</h2>
-        <LogoCadAlunos />
-          <p>Faça seu login</p>
-          <div className='info-login'>
-            <LoginForm />
-            <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
-          </div>
-        </div>
-        <div className='container-img'>
-          <img src="../src/assets/img-login.png" alt="imagem-login"/>
-        </div>
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LoginPage />}/>
+            <Route path="/registration" element={<RegistrationForm />}/>
+            <Route path="/registration-page" element={<RegistrationPage />}/>
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   )
