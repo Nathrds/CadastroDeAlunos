@@ -1,7 +1,7 @@
 // import React from 'react'
 // import { useState } from "react"
 import { InputField } from "../InputField"
-import { LoginButton } from "../LoginButton"
+import { Button } from './Button'
 import { useNavigate } from "react-router-dom"
 import { LogoCadAlunos } from "../LogoCadAlunos"
 import {useForm} from 'react-hook-form'
@@ -22,10 +22,10 @@ export const RegistrationForm = () => {
   return (
     <div className={styles.container_body}>
         <div className={styles.circle_container}></div>
+        <div className={styles.logo}>
+            <LogoCadAlunos/>
+        </div>
         <div className={styles.container_Registration}>
-            <div className={styles.logo}>
-                <LogoCadAlunos/>
-            </div>
             <div className={styles.form_Registration}>
                 <p>Formulário de Cadastro</p>
                 <form onSubmit={handleSubmit(onSubmit)} className={styles.form_register}>
@@ -69,9 +69,10 @@ export const RegistrationForm = () => {
                         error={errors.password?.message}
                     />
 
-                    <LoginButton type="submit" className={styles.button_register}>
+                    
+                    <Button type="submit" className={styles.button_register}>
                         <a href="">Cadastrar</a>
-                    </LoginButton>
+                    </Button>
                 </form>
             </div>
         </div>

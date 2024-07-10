@@ -1,0 +1,23 @@
+.loginButton_btn {
+    background-color: var(--cor-laranja);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    height: 45px;
+    margin-top: 9px;
+}
+
+.loginButton_btn:hover {
+    cursor: pointer;
+    background-color: #f8a239;
+}
+
+.loginButton_btn a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+}
