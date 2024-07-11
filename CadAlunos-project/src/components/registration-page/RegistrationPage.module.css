@@ -42,3 +42,29 @@
     margin: 20px 0;
     font-size: 18px;
 }
+
+/* @media (min-width: 820px) and (max-width: 1180px) {
+    .container_Registration {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }    
+} */
+
+@media screen and (max-width: 567px) {
+    .circle_container {
+        display: none;
+    }
+
+    .form_Registration {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .form_Registration p {
+        font-size: 16px;
+    }
+}

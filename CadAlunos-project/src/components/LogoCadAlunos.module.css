@@ -8,25 +8,31 @@
     color: var(--cor-laranja);
     border-top: 1px solid var(--cor-azul);
     font-weight: 600;
-    width: 34.5rem;
+    width: 520px; 
   }
   
-  .logo_name {
-    /* font-size: 42px; */
-    font-size: clamp(1.45rem, 3.8vw, 2.8rem);
+  .logo_name{
+    font-size: 42px;
+    /* font-size: clamp(1.45rem, 3.8vw, 2.8rem); */
   }
 
   @media screen and (max-width: 780px) {
     .logo_name h1 {
-      width: 380px;
-      font-size: 56px;
+      width: 390px;
+    }
+
+    .logo_name {
+      font-size: 30px;
     }
   }
 
   @media screen and (max-width: 480px) {
     .logo_name h1 {
       width: 320px;
-      font-size: 56px;
+    }
+
+    .logo_name {
+      font-size: 28px;
     }
 
     .logo_name span {
