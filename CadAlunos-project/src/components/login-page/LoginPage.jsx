@@ -11,6 +11,7 @@ export const LoginPage = () => {
     <>
         <div className={styles.container_login}>
             <div className={styles.container_info}>
+                <div className={styles.blue_line}></div>
             <h2 className={styles.h2_login}>Seja bem-vindo(a) ao</h2>
             <LogoCadAlunos />
                 <p>Faça seu login</p>
@@ -21,7 +22,7 @@ export const LoginPage = () => {
                 </div>
             </div>
             <div className={styles.container_img}>
-                <img src="../src/assets/img-login.png" alt="imagem-login"/>
+                <img src="../src/assets/img-login.png" alt="imagem-login" className={styles.img_responsive}/>
             </div>
         </div>
     </>
