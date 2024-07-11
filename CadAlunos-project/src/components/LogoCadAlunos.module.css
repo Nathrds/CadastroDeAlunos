@@ -13,3 +13,15 @@
   .logo_name {
     font-size: 42px;
   }
+
+  /* @media screen and (max-width: 1200px) {
+    .logo_name {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 1017px) {
+    .logo_name {
+      font-size: 1.6rem;
+    }
+  } */

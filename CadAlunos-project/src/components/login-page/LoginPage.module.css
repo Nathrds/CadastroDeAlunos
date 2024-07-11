@@ -76,4 +76,12 @@
 
 .container_img img {
   height: 100vh;
+  max-width: 100vw;
+}
+
+@media screen and (max-width=1200px) {
+  .container_img img {
+    height: 50vh;
+  }
+  
 }
