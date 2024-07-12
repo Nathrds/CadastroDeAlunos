@@ -15,7 +15,7 @@
     cursor: pointer;
     background-color: transparent;
     border: 1px solid var(--cor-laranja);
-    color: #F6931C;
+    color: #F6931C; 
 }
 
 .loginButton_btn a {
@@ -25,5 +25,11 @@
 }
 
 .loginButton_btn a:hover {
+    color: #F6931C;
+    padding: 10px 41px;
+    border-radius: 25px;
+}
+
+button:hover {
     color: #F6931C;
 }
