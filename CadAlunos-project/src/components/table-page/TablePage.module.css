@@ -1,3 +1,12 @@
+.cotainer_body {
+    background-color: aquamarine;
+}
+
+.container_info {
+    border: 2px solif red;
+    margin-top: 5%;
+}
+
 .circle_container {
     position: absolute;
     top: -290px;
@@ -16,4 +25,8 @@
     height: 100%;
     border-radius: 50%;
     background-color: #004C99;
+}
+
+.logo {
+
 }

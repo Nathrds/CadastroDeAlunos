@@ -12,12 +12,12 @@ export const TablePage = () => {
 
   return (
     <div className={styles.cotainer_body}>
-        <div>
+        <div className={styles.container_info}>
             <div className={styles.circle_container}></div>
-            <div>
+            <div className={styles.logo}>
                 <LogoCadAlunos />
             </div>
-            <div>
+            <div className={styles.lista_alunos}>
                 <h1>Lista de Alunos</h1>
                 <AlunosTable alunos={alunos} />
             </div>
