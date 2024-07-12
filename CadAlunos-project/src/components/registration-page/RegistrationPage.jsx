@@ -3,8 +3,10 @@ import { LogoCadAlunos } from "../LogoCadAlunos"
 import styles from './RegistrationPage.module.css'
 import { RegistrationForm } from "./RegistrationForm"
 import { Button } from "./Button"
+import { useNavigate } from 'react-router-dom'
 
 export const RegistrationPage = () => {
+  const navigate = useNavigate();
 
   return (
     <div className={styles.container_body}>
@@ -17,7 +19,7 @@ export const RegistrationPage = () => {
                 <p>Formulário de Cadastro</p>
                 <RegistrationForm />
                 <Button type="submit" className={styles.button_register}>
-                  <a href="">Cadastrar</a>
+                  <a href="#" onClick={() => navigate('/table-page')}>Cadastrar</a>
                 </Button>
             </div>
         </div>
