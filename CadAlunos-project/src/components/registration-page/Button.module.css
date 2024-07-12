@@ -13,11 +13,17 @@
 
 .loginButton_btn:hover {
     cursor: pointer;
-    background-color: #f8a239;
+    background-color: transparent;
+    border: 1px solid var(--cor-laranja);
+    color: #F6931C;
 }
 
 .loginButton_btn a {
     text-decoration: none;
     background-color: transparent;
     color: #fff;
+}
+
+.loginButton_btn a:hover {
+    color: #F6931C;
 }
