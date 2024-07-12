@@ -1,5 +1,8 @@
 // import React from 'react'
 import { AlunosTable } from "./AlunosTable"
+import { LogoCadAlunos } from "../LogoCadAlunos"
+import styles from "./TablePage.module.css"
+import { Button } from "../registration-page/Button"
 
 export const TablePage = () => {
     const alunos = [
@@ -8,9 +11,22 @@ export const TablePage = () => {
     ]
 
   return (
-    <div>
-        <h1>Lista de Alunos</h1>
-        <AlunosTable alunos={alunos} />
+    <div className={styles.cotainer_body}>
+        <div>
+            <div className={styles.circle_container}></div>
+            <div>
+                <LogoCadAlunos />
+            </div>
+            <div>
+                <h1>Lista de Alunos</h1>
+                <AlunosTable alunos={alunos} />
+            </div>
+            <div>
+                <Button type="submit" className={styles.button_register}> 
+                    <a href="#">Voltar</a>
+                </Button>
+            </div>
+        </div>
     </div>
   )
 }
