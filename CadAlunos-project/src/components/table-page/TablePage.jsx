@@ -3,8 +3,11 @@ import { AlunosTable } from "./AlunosTable"
 import { LogoCadAlunos } from "../LogoCadAlunos"
 import styles from "./TablePage.module.css"
 import { Button } from "../registration-page/Button"
+import { useNavigate } from 'react-router-dom'
 
 export const TablePage = () => {
+    const navigate = useNavigate();
+
     const alunos = [
         {id: 1, nome:'Ana Pereira da Silva Carvalho', email: 'ana.banana@gmail.com', cpf: '000.000.000-00' ,endereco: 'Rua do Ovo, numero 0, Asa Sul 913' },
         {id: 2, nome:'Marcelo Ferreira Peralta', email: 'marcelo-peralta@hotmail.com', cpf: '111.111.111-11' ,endereco: 'Rua 04, numero 2, Sudoeste' },
@@ -23,7 +26,7 @@ export const TablePage = () => {
                 <AlunosTable alunos={alunos} />
                 <div className={styles.button_voltar}>
                     <Button type="submit"> 
-                        <a href="#">Voltar</a>
+                        <a href="#" onClick={() => navigate('/')}>Voltar</a>
                     </Button>
                 </div>
             </div>

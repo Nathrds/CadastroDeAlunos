@@ -1,5 +1,4 @@
 .table_container {
-    border: 1px solid blue;
     width: 95%;
     border-collapse: collapse;
     margin-top: 5px;
@@ -8,7 +7,6 @@
 }
 
 th {
-    background-color: purple;
     padding: 12px;
     text-align: left;
     font-weight: 500;
@@ -18,7 +16,6 @@ th {
 }
 
 td {
-    /* border: 2px solid peru; */
     padding: 12px 0;
     text-align: left;
 }

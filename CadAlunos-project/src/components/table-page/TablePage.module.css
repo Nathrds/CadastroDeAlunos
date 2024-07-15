@@ -1,10 +1,8 @@
 .cotainer_body {
-    background-color: aquamarine;
     overflow-x: hidden;
 }
 
 .container_info {
-    border: 2px solif red;
     margin-top: 5%;
     position: relative;
 }
@@ -30,7 +28,6 @@
 }
 
 .lista_alunos {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,6 +37,7 @@
 
 .lista_alunos h1 {
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 .button_voltar {
     display: flex;
