@@ -35,6 +35,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 26px;
+    margin-top: 55px;
 }
 
 .lista_alunos h1 {
@@ -44,7 +45,6 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
-    padding-right: 150px;
     position: static;
 }
 
@@ -60,8 +60,22 @@
     }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 782px) {
     .circle_container {
         display: none;
+    }
+
+    .cotainer_body {
+        margin-top: 5%;
+    }
+
+    .lista_alunos h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 332px) {
+    .lista_alunos h1 {
+        font-size: 16px;
     }
 }

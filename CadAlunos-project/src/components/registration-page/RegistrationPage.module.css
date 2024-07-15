@@ -47,7 +47,7 @@
     color: #F6931C;
 }
 
-
+/* Responsividade */
 @media screen and (max-width: 567px) {
     .circle_container {
         display: none;
