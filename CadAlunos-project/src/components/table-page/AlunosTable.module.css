@@ -1,0 +1,36 @@
+.table_container {
+    border: 1px solid blue;
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+th {
+    background-color: purple;
+    padding: 12px;
+    text-align: left;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    color: #F78B1F;
+    padding-left: 0;
+}
+
+td {
+    border: 2px solid peru;
+    padding: 12px 0;
+    text-align: left;
+}
+
+.tr_info:nth-child(even) .td_nome, 
+.tr_info:nth-child(even) .td_email,
+.tr_info:nth-child(even) .td_cpf,
+.tr_info:nth-child(even) .td_endereco {
+    background-color: #f9f9f9;
+}
+
+.tr_info:nth-child(odd) .td_nome,
+.tr_info:nth-child(odd) .td_email,
+.tr_info:nth-child(odd) .td_cpf,
+.tr_info:nth-child(odd) .td_endereco {
+    background-color: #D9D9D9;
+}

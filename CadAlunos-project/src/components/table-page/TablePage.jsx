@@ -6,8 +6,9 @@ import { Button } from "../registration-page/Button"
 
 export const TablePage = () => {
     const alunos = [
-        {id: 1, nome:'Ana Pereira da Silva Carvalho', email: 'ana.banana@gmail.com', endereco: 'Rua do Ovo, numero 0, Asa Sul 913' },
-        {id: 1, nome:'Marcelo Ferreira Peralta', email: 'marcelo-peralta@hotmail.com', endereco: 'Rua 04, numero 2, Sudoeste' },
+        {id: 1, nome:'Ana Pereira da Silva Carvalho', email: 'ana.banana@gmail.com', cpf: '000.000.000-00' ,endereco: 'Rua do Ovo, numero 0, Asa Sul 913' },
+        {id: 2, nome:'Marcelo Ferreira Peralta', email: 'marcelo-peralta@hotmail.com', cpf: '111.111.111-11' ,endereco: 'Rua 04, numero 2, Sudoeste' },
+        {id: 3, nome:'Mayara Cardoso Pires', email: 'may_pires@gmail.com', cpf: '222.222.222-22' ,endereco: 'Rua 21, numero 1/4 bloco C, Ceilândia' }
     ]
 
   return (
@@ -18,7 +19,7 @@ export const TablePage = () => {
                 <LogoCadAlunos />
             </div>
             <div className={styles.lista_alunos}>
-                <h1>Lista de Alunos</h1>
+                <h1>Lista de Alunos cadastrados</h1>
                 <AlunosTable alunos={alunos} />
             </div>
             <div>

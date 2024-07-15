@@ -27,6 +27,13 @@
     background-color: #004C99;
 }
 
-.logo {
+.lista_alunos {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.lista_alunos h1 {
+    text-transform: uppercase;
 }

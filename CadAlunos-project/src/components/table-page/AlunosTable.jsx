@@ -1,9 +1,11 @@
 // import React from 'react'
 import PropTypes from 'prop-types'
+import styles from './AlunosTable.module.css'
+import { IconRow } from './IconRow'
 
 export const AlunosTable = ({ alunos }) => {
   return (
-    <table>
+    <table className={styles.table_container}>
         <thead>
             <tr>
                 <th>Nome</th>
@@ -14,11 +16,12 @@ export const AlunosTable = ({ alunos }) => {
         </thead>
         <tbody>
             {alunos.map((aluno) => (
-                <tr key={aluno.id}>
-                    <td>{aluno.nome}</td>
-                    <td>{aluno.email}</td>
-                    <td>{aluno.cpf}</td>
-                    <td>{aluno.endereco}</td>
+                <tr key={aluno.id} className={styles.tr_info}>
+                    <td className={styles.td_nome}>{aluno.nome}</td> 
+                    <td className={styles.td_email}>{aluno.email}</td>
+                    <td className={styles.td_cpf}>{aluno.cpf}</td>
+                    <td className={styles.td_endereco}>{aluno.endereco}</td>
+                    <IconRow/>
                 </tr>
             ))}
         </tbody>
