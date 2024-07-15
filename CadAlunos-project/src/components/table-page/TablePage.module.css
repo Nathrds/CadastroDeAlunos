@@ -1,10 +1,12 @@
 .cotainer_body {
     background-color: aquamarine;
+    overflow-x: hidden;
 }
 
 .container_info {
     border: 2px solif red;
     margin-top: 5%;
+    position: relative;
 }
 
 .circle_container {
@@ -32,8 +34,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 26px;
 }
 
 .lista_alunos h1 {
     text-transform: uppercase;
+}
+.button_voltar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-right: 150px;
+    position: static;
+}
+
+@media screen and (max-width: 880px) {
+    .lista_alunos {
+        border-collapse: collapse;
+        overflow: auto;
+    }
+
+    .button_voltar {
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .circle_container {
+        display: none;
+    }
 }

@@ -21,11 +21,11 @@ export const TablePage = () => {
             <div className={styles.lista_alunos}>
                 <h1>Lista de Alunos cadastrados</h1>
                 <AlunosTable alunos={alunos} />
-            </div>
-            <div>
-                <Button type="submit" className={styles.button_register}> 
-                    <a href="#">Voltar</a>
-                </Button>
+                <div className={styles.button_voltar}>
+                    <Button type="submit"> 
+                        <a href="#">Voltar</a>
+                    </Button>
+                </div>
             </div>
         </div>
     </div>
