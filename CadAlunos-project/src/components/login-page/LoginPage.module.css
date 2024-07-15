@@ -79,6 +79,10 @@
   color: var(--cor-laranja);
 }
 
+.info_login a:hover {
+  color: var(--cor-azul);
+} 
+
 .container_img {
   /* display: flex;
   justify-content: flex-end; */
