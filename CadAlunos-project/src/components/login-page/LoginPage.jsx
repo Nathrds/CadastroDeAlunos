@@ -1,5 +1,5 @@
 // import React from 'react'
-import { LoginForm } from '../LoginForm'
+import { LoginForm } from '../login-components/LoginForm'
 import { LogoCadAlunos } from '../LogoCadAlunos'
 import styles from './LoginPage.module.css'
 import { useNavigate } from 'react-router-dom'

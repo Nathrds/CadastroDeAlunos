@@ -1,6 +1,6 @@
 import {useForm} from 'react-hook-form'
-import { InputField } from './InputField'
-import { LoginButton } from './LoginButton'
+import { InputField } from '../login-components/InputField'
+import { LoginButton } from '../login-components/LoginButton'
 import styles from './LoginForm.module.css'
 
 export const LoginForm = () => {

@@ -1,6 +1,6 @@
 // import React from 'react'
 // import { useState } from "react"
-import { InputField } from "../InputField"
+import { InputField } from "../login-components/InputField"
 import { useNavigate } from "react-router-dom"
 import {useForm} from 'react-hook-form'
 import styles from './RegistrationForm.module.css'
