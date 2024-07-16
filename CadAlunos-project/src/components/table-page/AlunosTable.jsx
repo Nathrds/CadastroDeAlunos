@@ -32,7 +32,7 @@ export const AlunosTable = ({ alunos }) => {
 AlunosTable.propTypes = {
     alunos: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.string.isRequired,
+            id: PropTypes.number.isRequired,
             nome: PropTypes.string.isRequired,
             email: PropTypes.string.isRequired,
             cpf: PropTypes.string.isRequired,
