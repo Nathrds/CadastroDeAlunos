@@ -2,8 +2,15 @@
 import PropTypes from 'prop-types'
 import styles from './AlunosTable.module.css'
 import { IconRow } from './IconRow'
+import { useNavigate } from 'react-router-dom';
 
 export const AlunosTable = ({ alunos }) => {
+    const navigate = useNavigate();
+
+    const handleEdit = (aluno) => {
+        navigate(`/edit/${aluno.id}`, { state: { aluno } });
+    };
+
   return (
     <table className={styles.table_container}>
         <thead>
@@ -21,7 +28,7 @@ export const AlunosTable = ({ alunos }) => {
                     <td className={styles.td_email}>{aluno.email}</td>
                     <td className={styles.td_cpf}>{aluno.cpf}</td>
                     <td className={styles.td_endereco}>{aluno.endereco}</td>
-                    <IconRow/>
+                    <IconRow onEdit={() => handleEdit(aluno)} />
                 </tr>
             ))}
         </tbody>

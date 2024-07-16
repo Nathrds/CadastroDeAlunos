@@ -1,11 +1,10 @@
 // import React from 'react'
-import PropTypes from 'prop-types'
-import styles from './IconRow.module.css'
+import styles from '../table-page/IconRow.module.css'
 
-export const IconRow = ({ onEdit }) => {
+export const IconRowEdit = () => {
   return (
     <td className={styles.container_button}>
-        <button className={styles.icon_button} onClick={onEdit}>
+        <button className={styles.icon_button}>
             <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18.793 7.49999L22.543 11.25M16.293 25H26.293M6.29297 20L5.04297 25L10.043 23.75L24.5255 9.26749C24.9941 8.79867 25.2574 8.1629 25.2574 7.49999C25.2574 6.83708 24.9941 6.20131 24.5255 5.73249L24.3105 5.51749C23.8416 5.04881 23.2059 4.78552 22.543 4.78552C21.8801 4.78552 21.2443 5.04881 20.7755 5.51749L6.29297 20Z" stroke="#005594" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -17,8 +16,4 @@ export const IconRow = ({ onEdit }) => {
         </button>
     </td>
   )
-}
-
-IconRow.propTypes = {
-  onEdit: PropTypes.func.isRequired
 }
