@@ -16,8 +16,14 @@ th {
 }
 
 td {
-    padding: 12px 0;
+    padding: 8px 0;
     text-align: left;
+}
+
+tbody .td_acoes {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
 }
 
 .tr_info:nth-child(even) .td_nome, 

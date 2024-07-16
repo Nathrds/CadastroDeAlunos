@@ -21,14 +21,16 @@ export const AlunosTable = ({ alunos }) => {
                 <th>Endereço</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody className={styles.td_acao}>
             {alunos.map((aluno) => (
                 <tr key={aluno.id} className={styles.tr_info}>
                     <td className={styles.td_nome}>{aluno.nome}</td> 
                     <td className={styles.td_email}>{aluno.email}</td>
                     <td className={styles.td_cpf}>{aluno.cpf}</td>
                     <td className={styles.td_endereco}>{aluno.endereco}</td>
-                    <IconRow onEdit={() => handleEdit(aluno)} />
+                    <td className={styles.td_acoes}>
+                        <IconRow onEdit={() => handleEdit(aluno)} />
+                    </td>
                 </tr>
             ))}
         </tbody>

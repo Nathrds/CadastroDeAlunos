@@ -1,12 +1,12 @@
 .container_button {
     /* border: 1px solid red; */
-    width: 80%;
+    /* width: 9%; */
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-left: 10px;
+    /* justify-content: space-around; */
+    /* margin-top: 20px;
+    margin-left: 10px; */
 }
 
 .container_button button {
@@ -15,14 +15,23 @@
     background: none;
     border: none;
     cursor: pointer;
-
 }
 
-.icon_button svg {
+.icon_button_edit {
+  margin: 0 15px 0 10px;
+}
+
+.icon_button_delete {
+  margin: 0 10px 0 0;
+}
+
+.icon_button_edit svg,
+.icon_button_delete svg {
   transition: fill 0.3s ease, stroke 0.3s ease;
 }
   
-.icon_button:hover svg {
+.icon_button_edit:hover svg,
+.icon_button_delete:hover svg {
   fill: #F6931C;
   stroke: #F6931C;
 }
