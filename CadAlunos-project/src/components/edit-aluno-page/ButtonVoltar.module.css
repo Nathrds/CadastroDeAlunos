@@ -1,0 +1,33 @@
+.button_btnVoltar {
+    background-color: transparent;
+    color: var(--cor-laranja);
+    border: 1px solid var(--cor-laranja);
+    border-radius: 25px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 19px;
+    height: 45px;
+    margin-top: 9px;
+}
+
+.button_btnVoltar:hover {
+    cursor: pointer;
+    background-color: var(--cor-laranja);
+    border: none;
+    color: #fff; 
+}
+
+.button_btnVoltar a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--cor-laranja);
+}
+
+.button_btnVoltar a:hover {
+    color: #fff;
+}
+
+button:hover {
+    color: #fff;
+}

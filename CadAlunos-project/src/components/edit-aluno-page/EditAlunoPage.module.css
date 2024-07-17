@@ -1,3 +1,34 @@
+.container_edit {
+    /* border: 2px solid brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.circle_container {
+    position: absolute;
+    top: -290px;
+    right: -290px;
+    width: 468px;
+    height: 470px;
+    overflow: hidden;
+}
+
+.circle_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #004C99;
+}
+
+.logo {
+    margin: 50px 0 15px 0;
+}
+
 .info_dados {
     display: flex;
     flex-direction: column;
@@ -12,6 +43,10 @@
     width: 90%;
 }
 
+.info_edit_dados h1 {
+    margin: 15px 0;
+}
+
 .input_icons {
     /* border: 2px solid red; */
     display: flex;
@@ -23,4 +58,11 @@
 .icons_editPage {
     /* border: 2px solid green; */
     margin-bottom: 10px;
+}
+
+.btn_voltar_salvar {
+    /* border: 2px solid palegreen; */
+    width: 91.5%;
+    display: flex;
+    justify-content: space-between;
 }
