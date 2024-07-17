@@ -25,9 +25,11 @@ export const TablePage = () => {
                 <h1>Lista de Alunos cadastrados</h1>
                 <AlunosTable alunos={alunos} />
                 <div className={styles.button_voltar}>
+                <a href="#" onClick={() => navigate('/')}>
                     <Button type="submit"> 
-                        <a href="#" onClick={() => navigate('/')}>Voltar</a>
+                        Voltar
                     </Button>
+                </a>
                 </div>
             </div>
         </div>

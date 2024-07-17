@@ -23,7 +23,6 @@ export const EditAlunoPage = () => {
 
     const onSubmit = (data) => {
         console.log('Dados atualizados:', data);
-        navigate('/');
     };
 
 
@@ -86,7 +85,9 @@ export const EditAlunoPage = () => {
                     </div>
                 </form>
             </div>
-            <div><Button type="submit">Salvar</Button></div>
+            <div>
+                <a href="#" onClick={() => navigate('/table-page')} ><Button type="submit">Salvar</Button></a>
+            </div>
         </div>
     </div>
   )

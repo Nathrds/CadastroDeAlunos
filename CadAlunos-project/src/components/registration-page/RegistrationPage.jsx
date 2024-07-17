@@ -18,9 +18,11 @@ export const RegistrationPage = () => {
             <div className={styles.form_Registration}>
                 <p>Formulário de Cadastro</p>
                 <RegistrationForm />
+                <a href="#" onClick={() => navigate('/table-page')}>
                 <Button type="submit" className={styles.button_register}>
-                  <a href="#" onClick={() => navigate('/table-page')}>Cadastrar</a>
+                  Cadastrar
                 </Button>
+                </a>
             </div>
         </div>
     </div>
