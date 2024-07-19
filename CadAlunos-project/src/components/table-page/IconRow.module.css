@@ -35,3 +35,18 @@
   fill: #F6931C;
   stroke: #F6931C;
 }
+
+/* Responsividade */
+@media screen and (max-width: 430px) {
+  .container_button {
+    width: 50%;
+  }
+  
+  .icon_button_edit {
+    margin: 0 5px 0 5px;
+  }
+  
+  .icon_button_delete {
+    margin: 0 2px 0 0;
+  }
+}

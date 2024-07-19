@@ -10,7 +10,7 @@
     height: 52px;
     border-radius: 15px;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 18px;
     margin: 9px 0;
 }
 
@@ -20,4 +20,17 @@
 .inputField_input:focus {
     border: 1px solid var(--cor-laranja);
     outline-style: none;
+}
+
+/* Responsividade */
+@media screen and (max-width: 445px) {
+    .inputField_input {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .inputField_input {
+        font-size: 14px;
+    }
 }
