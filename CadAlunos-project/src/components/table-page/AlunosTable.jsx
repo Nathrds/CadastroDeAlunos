@@ -12,29 +12,31 @@ export const AlunosTable = ({ alunos }) => {
     };
 
   return (
-    <table className={styles.table_container}>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>CPF</th>
-                <th>Endereço</th>
-            </tr>
-        </thead>
-        <tbody className={styles.td_acao}>
-            {alunos.map((aluno) => (
-                <tr key={aluno.id} className={styles.tr_info}>
-                    <td className={styles.td_nome}>{aluno.nome}</td> 
-                    <td className={styles.td_email}>{aluno.email}</td>
-                    <td className={styles.td_cpf}>{aluno.cpf}</td>
-                    <td className={styles.td_endereco}>{aluno.endereco}</td>
-                    <td className={styles.td_acoes}>
-                        <IconRow onEdit={() => handleEdit(aluno)} />
-                    </td>
+    <div className={styles.table_wrapper}>
+        <table className={styles.table_container}>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>CPF</th>
+                    <th>Endereço</th>
                 </tr>
-            ))}
-        </tbody>
-    </table>
+            </thead>
+            <tbody className={styles.td_acao}>
+                {alunos.map((aluno) => (
+                    <tr key={aluno.id} className={styles.tr_info}>
+                        <td className={styles.td_nome}>{aluno.nome}</td>
+                        <td className={styles.td_email}>{aluno.email}</td>
+                        <td className={styles.td_cpf}>{aluno.cpf}</td>
+                        <td className={styles.td_endereco}>{aluno.endereco}</td>
+                        <td className={styles.td_acoes}>
+                            <IconRow onEdit={() => handleEdit(aluno)} />
+                        </td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    </div>
   )
 }
 
