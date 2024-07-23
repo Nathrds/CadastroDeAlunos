@@ -12,12 +12,12 @@ export const TablePage = () => {
         {id: 1, nome:'Ana Pereira da Silva Carvalho', email: 'ana.banana@gmail.com', cpf: '000.000.000-00' ,endereco: 'Rua do Ovo, numero 0, Asa Sul 913' },
         {id: 2, nome:'Marcelo Ferreira Peralta', email: 'marcelo-peralta@hotmail.com', cpf: '111.111.111-11' ,endereco: 'Rua 04, numero 2, Sudoeste' },
         {id: 3, nome:'Mayara Cardoso Pires', email: 'may_pires@gmail.com', cpf: '222.222.222-22' ,endereco: 'Rua 21, numero 1/4 bloco C, Ceilândia' },
-        {id: 4, nome: 'João Batista Lima', email: 'joao.lima@exemplo.com', cpf: '333.333.333-33', endereco: 'Rua das Flores, numero 123, Plano Piloto'},
-        {id: 5, nome: 'Clara Santos Oliveira', email: 'clara.s.oliveira@gmail.com', cpf: '444.444.444-44', endereco: 'Avenida Central, numero 56, Taguatinga'},
-        {id: 6, nome: 'Pedro Henrique Souza', email: 'pedro_souza@outlook.com', cpf: '555.555.555-55', endereco: 'Quadra 30, lote 5, Gama'},
-        {id: 7, nome:'Marcos Araujo Zambuk', email: 'marcos_prof@gmail.com', cpf: '666.666.666-66' ,endereco: 'Rua 12 Sul, numero 20, Asa Norte 402' },
-        {id: 8, nome:'Marcelo Ferreira Peralta', email: 'marcelo-peralta@hotmail.com', cpf: '777.777.777-77' ,endereco: 'Rua 04, numero 2, Sudoeste' },
-        {id: 9, nome:'Mayara Cardoso Pires', email: 'may_pires@gmail.com', cpf: '888.888.888-88' ,endereco: 'Rua 21, numero 1/4 bloco C, Ceilândia' },
+        // {id: 4, nome: 'João Batista Lima', email: 'joao.lima@exemplo.com', cpf: '333.333.333-33', endereco: 'Rua das Flores, numero 123, Plano Piloto'},
+        // {id: 5, nome: 'Clara Santos Oliveira', email: 'clara.s.oliveira@gmail.com', cpf: '444.444.444-44', endereco: 'Avenida Central, numero 56, Taguatinga'},
+        // {id: 6, nome: 'Pedro Henrique Souza', email: 'pedro_souza@outlook.com', cpf: '555.555.555-55', endereco: 'Quadra 30, lote 5, Gama'},
+        // {id: 7, nome:'Marcos Araujo Zambuk', email: 'marcos_prof@gmail.com', cpf: '666.666.666-66' ,endereco: 'Rua 12 Sul, numero 20, Asa Norte 402' },
+        // {id: 8, nome:'Marcelo Ferreira Peralta', email: 'marcelo-peralta@hotmail.com', cpf: '777.777.777-77' ,endereco: 'Rua 04, numero 2, Sudoeste' },
+        // {id: 9, nome:'Mayara Cardoso Pires', email: 'may_pires@gmail.com', cpf: '888.888.888-88' ,endereco: 'Rua 21, numero 1/4 bloco C, Ceilândia' },
     ]
 
   return (
